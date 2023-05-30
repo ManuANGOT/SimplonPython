@@ -81,6 +81,7 @@ def inversion_liste(liste3):
 
 ma_liste = [1, "test", 0.9867, "Python, c'est génial !"]
 resultat = inversion_liste(ma_liste)
+print(ma_liste)
 print(resultat)
 
 
