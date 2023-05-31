@@ -33,6 +33,8 @@ liste_nombres = [5, 8, 12, 3, 9]
 resultat = calcul_somme(liste_nombres)
 print(resultat)  # Résultat: 37
 
+# Voir correction Antoine sur Discord
+
 
 # Exercice 3 :
 """ Écrire une fonction qui prend comme argument une liste de nombre, et qui renvoie la moyenne des nombres de la liste."""
