@@ -86,6 +86,24 @@ resultat = inversion_liste(ma_liste)
 print(ma_liste)
 print(resultat)
 
+# Exercice 7
+import random
+from random import randint
+
+
+# Exercice 8
+#Méthode classique
+liste_inf_10 = []
+for elt in liste:
+    if elt < 10 :
+        liste_inf_10.append(elt)
+        print(liste_inf_10)
+
+#Méthode par compréhension
+liste_inf_10 = [elt for elt in liste if elt < 10]
+print(liste_inf_10)
+
+
 
 
 
