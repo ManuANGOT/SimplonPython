@@ -1,3 +1,5 @@
+# Autre méthode avec utilisation d'une classe et d'une bibliothèque (range)
+
 import random
 
 # Creation of a "Morpionibus" class, which will be the name of my game
