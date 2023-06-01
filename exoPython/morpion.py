@@ -1,9 +1,11 @@
-# Création du plateau de jeu
+# Création du "plateau de jeu" dans la console
 def afficher_plateau(plateau):
     for ligne in plateau:
         print("|".join(ligne))
         print("-----")
 
+
+# Méthode pour vérifier la victoire : 3 symboles identisues en ligne, en colonne ou en diagonale
 def verifier_victoire(plateau, symbole):
     # Vérifier les lignes
     for ligne in plateau:
@@ -23,17 +25,8 @@ def verifier_victoire(plateau, symbole):
 
     return False
 
-def verifier_match_nul(plateau):
-    for ligne in plateau:
-        if " " in ligne:
-            return False
-    return True
 
-def redemarrer_jeu():
-    plateau = [[" " for _ in range(3)] for _ in range(3)]
-    joueur = 1
-    return plateau, joueur
-
+# Fonction pour démarrer le jeu
 def jouer_morpion():
     plateau, joueur = redemarrer_jeu()
 
@@ -75,7 +68,24 @@ def jouer_morpion():
     # Rejouer
     choix = input("Voulez-vous rejouer ? (Oui/Non) : ")
     if choix.lower() == "oui":
+        # rappel de la fonction "jouer_morpion()" pour relancer le jeu
         jouer_morpion()
 
-# Lancer le jeu
+
+# fonction pour vérifier si match nul
+def verifier_match_nul(plateau):
+    for ligne in plateau:
+        if " " in ligne:
+            return False
+    return True
+
+
+# fonction pour redémarrer le jeu
+def redemarrer_jeu():
+    plateau = [[" " for _ in range(3)] for _ in range(3)]
+    joueur = 1
+    return plateau, joueur
+
+
+# Lancer le jeu, appel de la fonction jouer_morpion() pour lancer le jeu/programme
 jouer_morpion()
