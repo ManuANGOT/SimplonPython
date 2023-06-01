@@ -3,11 +3,9 @@ import random, time
 grid = [[' ' for _ in range(15)] for _ in range(8)]
 """Création grille torique qui simulera la mer (base 8 x 15)"""
 
-
 """Je génére une grille avec des poissons et des requins.
  Je pars du principe que environ un tiers de la grille doit être remplie de poissons,
    et qu'il doit y avoir trois fois moins de requins que de poissons """
-
 fish_count = (8 * 15) // 3
 shark_count = fish_count // 3
 
@@ -151,6 +149,6 @@ while num_turns < 100:
     simulate_turn()
     num_turns += 1
 
-    # Pause d'une seconde entre chaque tour
+    # Afin de voir correctement l'animation, je met une pause d'une demi-seconde entre chaque tour
     time.sleep(1)
 
