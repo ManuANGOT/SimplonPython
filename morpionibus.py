@@ -95,31 +95,31 @@ class Morpionibus:
 
             self.show_board()
 
-            # taking user input
+            # User input
             row, col = list(
-                map(int, input("Enter row and column numbers to fix spot: ").split()))
+                map(int, input("Enter a row number and a column number to validate your turn: ").split()))
             print()
 
             # fixing the spot
-            self.fix_spot(row - 1, col - 1, player)
+            self.fix_spot(row - 1, col - 1, joueur)
 
-            # checking whether current player is won or not
-            if self.is_player_win(player):
-                print(f"Player {player} wins the game!")
+            # checking if current player is won or not
+            if self.is_player_win(joueur):
+                print(f"Player {joueur} wins the game!")
                 break
 
-            # checking whether the game is draw or not
+            # checking if the game is draw or not
             if self.is_board_filled():
                 print("Match Draw!")
                 break
 
-            # swapping the turn
-            player = self.swap_player_turn(player)
+            # pass the turn
+            player = self.swap_player_turn(joueur)
 
-        # showing the final view of board
+        # display the board at the end of the game
         print()
         self.show_board()
 
-# starting the game
+# Starting
 morpion = Morpionibus()
 morpion.start()
