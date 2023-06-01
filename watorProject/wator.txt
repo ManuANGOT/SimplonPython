@@ -1,19 +1,21 @@
-simulation thons/requins
-grille h= 8 l= 15
+simulation thons/requins wa-Tor
+"grille torique" h= 8 l= 15
 8 x 15 cases
 1/3 de la grille remplie de poissons
 et 3 fois moins de requins que de poissons.
 
-à chaque tour : soit poisson bouge t ou reste si il a de la place (case)
+à chaque tour : soit poisson bouge ou reste si il n'a de la place (case/cell)
 doivent se reproduire tous les 5 tours, lors de son déplacement. (quand il bouge, un autre poisson apparait).
 
-Le requin fait la même chose m	ais a 4 d'énergie. si mange poisson  + 3 ou 4, et si se déplace sans manger = -1
+Le requin fait la même chose mais a 4 d'énergie. si mange poisson  + 3 ou 4, et si se déplace sans manger = -1
 énergie max requin = 1O.
 Même système de reproduction que poisson.
 
 poissons ne peuvent se reproduire qu'à partir de 4 déplacements
 Requins------------------------------------------5 déplacements.
 
-Quand poissons sortent de la grille, reviennent de l'autre côté (horizontalement et verticalement)
+Quand poissons sortent de la grille, reviennent de l'autre côté (horizontalement et verticalement) = grille torique
 
 Voir wator sur explorateurs
+
+
