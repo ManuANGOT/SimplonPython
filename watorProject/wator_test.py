@@ -1,7 +1,9 @@
 import random, time
 
+
+"""Création de la grille torique qui simulera la mer (base 8 x 15)"""
 grid = [[' ' for _ in range(15)] for _ in range(8)]
-"""Création grille torique qui simulera la mer (base 8 x 15)"""
+
 
 """Je génére une grille avec des poissons et des requins.
  Je pars du principe que environ un tiers de la grille doit être remplie de poissons,
@@ -25,7 +27,7 @@ while shark_count > 0:
         grid[y][x] = 'S'
         shark_count -= 1
 
-# Déplacements du poisson
+# Déplacements des poissons
 def move_fish(x, y):
     # Déplacements possibles pour le poisson, si espaces libres
     possible_moves = [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]
@@ -69,11 +71,19 @@ def move_shark(x, y):
             grid[new_y][new_x] = 'S'
             grid[y][x] = ' '
             return
-
-    # Si aucun poisson n'est trouvé, le requin se déplace sans manger
+           
+       
+        # Si aucun poisson n'est trouvé, le requin se déplace sans manger
     if grid[y][x] == 'S':
         grid[y][x] = ' '
         grid[new_y][new_x] = 'S'
+        # le requin perd un point d'énergie
+        shark_energy[new_y][new_x] -= 1
+
+        # Vérification de l'énergie du requin
+        if shark_energy[new_y][new_x] == 0:
+            # Le requin meurt s'il n'a plus d'énergie
+            grid[new_y][new_x] = ' '
         return
 
 
