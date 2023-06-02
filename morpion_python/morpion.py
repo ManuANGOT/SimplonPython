@@ -1,11 +1,16 @@
 # Création du "plateau de jeu" dans la console
 def afficher_plateau(plateau):
+    """ fonction qui permet d'afficher la grille
+    
+    Args : 
+    afficher-plateau() : permet d'afficher
+    plateau : la grille """
     for ligne in plateau:
         print("|".join(ligne))
         print("-----")
 
 
-# Méthode pour vérifier la victoire : 3 symboles identisues en ligne, en colonne ou en diagonale
+# Pour vérifier la victoire, j'utilise 3 symboles identiques en ligne, en colonne ou en diagonale
 def verifier_victoire(plateau, symbole):
     # Vérifier les lignes
     for ligne in plateau:

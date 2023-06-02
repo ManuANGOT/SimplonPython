@@ -29,14 +29,14 @@ while shark_count > 0:
 
 # Déplacements des poissons
 def move_fish(x, y):
-    # Déplacements possibles pour le poisson, si espaces libres
+    # Déplacements possibles pour le poisson, par mélange aléatoire, si espaces libres
     possible_moves = [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]
 
     # Choix d'un déplacement aléatoire parmi les possibilités
     random.shuffle(possible_moves)
     
     for new_x, new_y in possible_moves:
-        # Vérification des limites de la grille t
+        # Vérification des limites de la grille
         new_x = new_x % 15
         new_y = new_y % 8
         
