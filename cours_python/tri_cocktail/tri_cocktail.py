@@ -1,5 +1,16 @@
+
 def tri_cocktail(tableau):
-    
+    """_fonction tri_cocktail 
+
+    Args:
+        tableau (tableau): une collection d'éléments de tailles variées
+        (chiffres, fichiers...)
+
+    Returns:
+       tableau_tri: la liste triée après chaque passage : une fois de gauche à droite, puis une fois de droite à gauche
+    """
+
+    # définition des balises de mon tableau
     n = len(tableau)
     start = 0
     end = n - 1
@@ -13,6 +24,8 @@ def tri_cocktail(tableau):
                 tableau[i], tableau[i + 1] = tableau[i + 1], tableau[i]
                 echange = True
         end -= 1
+        print (tableau)
+
 
         # Itération de droite à gauche
         echange = False
@@ -21,11 +34,12 @@ def tri_cocktail(tableau):
                 tableau[i], tableau[i + 1] = tableau[i + 1], tableau[i]
                 echange = True
         start += 1
-
+        print (tableau)
     return tableau
   
+# Création d'un tableau d'échantillons pour tester le code et afficher le tri
 tableau = [40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6, 4, 2, 0]
-tableau_tri = tri_cocktail(tableau)
 
-print("tableau non trié :" + (tableau))
-print("tableau après le tri-cocktail : " +(tableau_tri))
+
+tableau_tri = tri_cocktail(tableau)
+print(tableau_tri)
