@@ -1,0 +1,13 @@
+comment fonctionne le tri cocktail :
+
+On part de la première position de la liste et on la compare avec la suivante.
+Si les deux éléments sont dans le mauvais ordre, on les échange.
+
+On parcourt ensuite la liste dans l'ordre croissant jusqu'à l'avant-dernière position.
+On compare chaque paire d'éléments adjacents et on les échange si nécessaire.
+
+On répète les étapes 1 et 2 en inversant la direction de parcours. 
+On commence à l'avant-dernière position et on se déplace vers la première position.
+
+On répète ces itérations jusqu'à ce qu'aucun échange ne soit effectué lors d'un passage complet de la liste.
+
