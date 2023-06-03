@@ -1,5 +1,4 @@
 # Exercice 1 :
-
 input_user = input("Please enter your distance (miles) : ")
 try:
     input_user = int(input_user)
@@ -8,7 +7,6 @@ except ValueError:
     print("I ask for a number ...")
 
 # Exercice 2 :
-
 var1 = "Je dois être en seconde position"
 var2 = "Je dois être en première position"
 

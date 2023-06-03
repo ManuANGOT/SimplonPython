@@ -43,3 +43,6 @@ tableau = [40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6,
 
 tableau_tri = tri_cocktail(tableau)
 print(tableau_tri)
+
+# Ce code est terminé et fonctionne !!!
+# Pour démarrer le test, entrer le nom du fichier dans la console
