@@ -37,3 +37,4 @@ tableau_tri = tri_a_peigne(tableau)
 print(tableau_tri)
 
 # Ce code n'est pas terminé !!!
+# Je rentre une ligne de code
