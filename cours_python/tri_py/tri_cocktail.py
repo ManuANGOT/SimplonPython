@@ -9,9 +9,9 @@ def tri_cocktail(table):
     """
     # définition des balises de mon tableau
     complexite = (0, 0, 0)
-    x = len(table)
+    n = len(table)
     start = 0
-    end = x - 1
+    end = n - 1
     exchange = True
 
     while exchange:
