@@ -11,3 +11,11 @@ On commence à l'avant-dernière position et on se déplace vers la première po
 
 On répète ces itérations jusqu'à ce qu'aucun échange ne soit effectué lors d'un passage complet de la liste.
 
+Le tri cocktail (cocktail sort), ou tri shaker (shaker sort) ou tri à bulles bidirectionnel (bidirectional bubble sort) est une variante du tri à bulles1 qui est à la fois un algorithme de tri et un tri par comparaison. 
+La différence entre cet algorithme et le tri à bulles est qu'il exécute un tri dans chaque direction à chaque passe le long de la liste à trier.
+
+Intérêt : optimisation !
+Après i passes, les i premiers éléments et les i derniers éléments sont à leur emplacement définitif.
+Ils n'ont donc plus besoin d'être vérifiés.
+Il est donc possible d'optimiser cet algorithme en ne vérifiant à chaque passe que la partie centrale de la liste non encore triée définitivement. 
+Ceci permet de réduire de moitié le nombre de comparaisons à effectuer

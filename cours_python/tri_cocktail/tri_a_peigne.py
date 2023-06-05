@@ -9,7 +9,6 @@ def tri_a_peigne(tableau):
     Returns:
        
     """
-
     # définition des balises de mon tableau
     intervalle = len(tableau)
     end = intervalle - 1
@@ -18,15 +17,14 @@ def tri_a_peigne(tableau):
     while (echange == True) or (intervalle>1):      
         echange = False
         intervalle = math.floor(intervalle / 1.3)
-        if intervalle<1 : intervalle=1
+        if intervalle<1 : intervalle=1 
         for i in range(0, len(tableau) - intervalle):
             if tableau[i] > tableau[i + intervalle]:
-                tableau[i], tableau[i + 1] = tableau[i + 1], tableau[i]
+               
                 echange = True
-                tableau[i], tableau[i + intervalle] = \
-                tableau[i + intervalle],tableau[i]
+                tableau[i], tableau[i + intervalle] = tableau[i + intervalle],tableau[i]
             
-            print(tableau)
+        print(tableau)
            
     return tableau
   
@@ -36,5 +34,5 @@ tableau = [40, 38, 36, 34, 32, 30, 28, 26, 24, 22, 20, 18, 16, 14, 12, 10, 8, 6,
 tableau_tri = tri_a_peigne(tableau)
 print(tableau_tri)
 
-# Ce code n'est pas terminé !!!
-# Je rentre une ligne de code
+# code ok
+
