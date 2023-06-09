@@ -9,6 +9,7 @@ class AlgoGenetic:
         chemin = list(self.tableau)
         random.shuffle(chemin)
         return chemin
+    print(chemin)
     
     # Je crée aléatoirement une popultation de base
     def generer_population_base(self, taille_population):
@@ -17,6 +18,7 @@ class AlgoGenetic:
             chemin = self.generer_chemin_aleatoire()
             population.append(chemin)
         self.population = population
+    print("Population de base, est de : " + population)
 
 
     # fonction pour évaluer la population
@@ -27,6 +29,7 @@ class AlgoGenetic:
             evaluation = self.fonction_evaluation(chemin)
             evaluations.append(evaluation)
         return evaluations
+        print(evaluations)
     
 
     # Fonction pour évaluer la validité des chemins    
